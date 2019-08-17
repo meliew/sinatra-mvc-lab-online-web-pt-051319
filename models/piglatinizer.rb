@@ -26,5 +26,7 @@ end
         #if there is, then add both consonants to the end of the word, and then add "way"
         #then, if there are multiple words, I need to add them back together as a phrase
         #put the phrase on the piglatinize.erb page
+      end
     end
   end
+end
