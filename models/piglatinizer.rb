@@ -1,10 +1,10 @@
 class PigLatinizer
 
-  def piglatinize_sentence(words)
-    words.split(" ").map{|w| piglatinize(w)}.join(" ")
+  def piglatinize(input)
+    input.split(" ").map{|w| piglatinize_word(w)}.join(" ")
   end
 
-  def piglatinize(word)
+  def piglatinize_word(word)
     if word.downcase =~ /^[aeiou]/
       "#{word}way"
     else
