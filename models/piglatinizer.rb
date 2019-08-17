@@ -8,7 +8,7 @@ class PigLatinizer
     if word.downcase =~ /^[aeiou]/
       "#{word}way"
     else
-      i = word.index(/[aeiou]/)
+      i = word.downcase.index(/[aeiou]/)
       word[i..-1] + word[0...i] + 'ay'
     end
   end
