@@ -5,7 +5,7 @@ class PigLatinizer
   end
 
   def piglatinize(word)
-    if word =~ /^[aeiou]/
+    if word.downcase =~ /^[aeiou]/
       "#{word}way"
     else
       i = word.index(/[aeiou]/)
