@@ -17,9 +17,8 @@ class PigLatinizer
     if word =~ /^[aeiou]/
       "#{word}way"
     else
-
-
-
+      i = word.index(/[aeiou]/)
+      word[i..-1] + word[0...i] + 'ay'
     end
   end
 end
