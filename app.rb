@@ -14,7 +14,7 @@ class App < Sinatra::Base
     erb :piglatinize
 end
 
-get '/piglatinize' do 
+get '/piglatinize' do
 
   erb :piglatinize
 end 
