@@ -1,16 +1,7 @@
 class PigLatinizer
 
-
-  def split_sentence(sentence)
-    @word_array = sentence.split(" ")
-  end
-
   def piglatinize_sentence(words)
-    new_array = []
-    words.each do |w|
-      piglatinize(w)
-      new_array << w
-    end
+    words.split(" ").map{|w| piglatinize(w)}.join(" ")
   end
 
   def piglatinize(word)
