@@ -9,15 +9,12 @@ class App < Sinatra::Base
   post '/piglatinize' do
     @text = Piglatinizer.new(params[:user_phrase])
 
-
-
-
     erb :piglatinize
 end
 
-get '/piglatinize' do
-
-  erb :piglatinize
+# get '/piglatinize' do
+#
+#   erb :piglatinize
 end
 
 
