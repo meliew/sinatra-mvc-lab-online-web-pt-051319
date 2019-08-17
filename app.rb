@@ -11,6 +11,6 @@ class App < Sinatra::Base
     @user_phrase = p.piglatinize(params[:user_phrase])
 
     erb :piglatinize
-end
+  end
 
 end
