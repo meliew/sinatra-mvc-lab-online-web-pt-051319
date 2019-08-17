@@ -16,7 +16,7 @@ end
   def piglatinize(word)
     if word =~ /^[aeiou]/
       "#{word}way"
-    else
+    elsif
       #if there is a consonant
       if word[0] !=~ /^[aeiou]/ && word[1] =~ /[aeiou]/
         new_word = word.split(" ")
