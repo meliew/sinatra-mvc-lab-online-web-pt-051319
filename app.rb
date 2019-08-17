@@ -10,7 +10,6 @@ class App < Sinatra::Base
 
     @user_phrase = Piglatinizer.new(params[:user_input])
 
-    erb :piglatinize
   end
 
   get '/piglatinize' do
