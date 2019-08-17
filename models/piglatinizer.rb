@@ -28,4 +28,4 @@ end
         #put the phrase on the piglatinize.erb page
     end
   end
-end
+
